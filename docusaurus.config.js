@@ -4,8 +4,8 @@ module.exports = {
   url: "https://rippledb.github.io",
   baseUrl: "/",
   favicon: "img/favicon.ico",
-  organizationName: "heineiuo", // Usually your GitHub org/user name.
-  projectName: "rippledb", // Usually your repo name.
+  organizationName: "rippledb", // Usually your GitHub org/user name.
+  projectName: "rippledb.github.io", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Rippledb",
