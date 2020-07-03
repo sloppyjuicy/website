@@ -1,6 +1,22 @@
 module.exports = {
   someSidebar: {
-    Installation: ["get-started", "doc2", "doc3"],
-    Features: ["mdx"],
+    Installation: ["get-started"],
+    API: [
+      {
+        Database: [
+          "new-database",
+          "db-get",
+          "db-put",
+          "db-del",
+          "db-batch",
+          "db-iterator",
+          "db-compact-range",
+          "db-get-snapshot",
+          "db-release-snapshot",
+          "db-close",
+        ],
+      },
+      { DBRepairer: ["new-dbrepairer", "dbrepairer-run"] },
+    ],
   },
 };

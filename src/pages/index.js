@@ -12,7 +12,7 @@ const features = [
     imageUrl: "img/undraw_docusaurus_mountain.svg",
     description: (
       <>
-        RippleDB is totally written in TypeScript, and runs on different
+        Rippledb is totally written in TypeScript, and runs on different
         platforms after being compiled to JavaScript.
       </>
     ),
@@ -22,7 +22,7 @@ const features = [
     imageUrl: "img/undraw_docusaurus_tree.svg",
     description: (
       <>
-        RippleDB has only 7k+ source code, and smaller than 1MB after compiled.
+        Rippledb has only 7k+ source code, and smaller than 1MB after compiled.
       </>
     ),
   },
@@ -31,7 +31,7 @@ const features = [
     imageUrl: "img/undraw_docusaurus_react.svg",
     description: (
       <>
-        RippleDB can be embedded in node.js application (or other JavaScript
+        Rippledb can be embedded in node.js application (or other JavaScript
         Runtime Environments) very easily.
       </>
     ),

@@ -22,7 +22,7 @@ module.exports = {
         },
         { to: "blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/heineiuo/rippledb",
           label: "GitHub",
           position: "right",
         },
@@ -49,16 +49,16 @@ module.exports = {
           items: [
             {
               label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              href: "https://stackoverflow.com/questions/tagged/rippledb",
             },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
+            // {
+            //   label: "Discord",
+            //   href: "https://discordapp.com/invite/rippledb",
+            // },
+            // {
+            //   label: "Twitter",
+            //   href: "https://twitter.com/rippledb",
+            // },
           ],
         },
         {
@@ -70,12 +70,12 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/heineiuo/rippledb",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} RippleDB. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Rippledb. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -84,17 +84,15 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: "doc1",
+          homePageId: "get-started",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+          editUrl: "https://github.com/rippledb/website/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+          editUrl: "https://github.com/rippledb/website/edit/master/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
