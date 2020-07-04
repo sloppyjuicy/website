@@ -35,12 +35,12 @@ module.exports = {
           title: "Docs",
           items: [
             {
-              label: "Style Guide",
-              to: "docs/",
+              label: "Installation",
+              to: "docs",
             },
             {
-              label: "Second Doc",
-              to: "docs/doc2/",
+              label: "API",
+              to: "docs/new-database",
             },
           ],
         },

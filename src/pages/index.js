@@ -23,6 +23,7 @@ const features = [
     description: (
       <>
         Rippledb has only 7k+ source code, and smaller than 1MB after compiled.
+        Rippledb use zero third party modules.
       </>
     ),
   },

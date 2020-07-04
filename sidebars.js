@@ -5,8 +5,8 @@ module.exports = {
       {
         Database: [
           "new-database",
-          "db-get",
           "db-put",
+          "db-get",
           "db-del",
           "db-batch",
           "db-iterator",
@@ -17,6 +17,7 @@ module.exports = {
         ],
       },
       { DBRepairer: ["new-dbrepairer", "dbrepairer-run"] },
+      { WriteBatch: ["new-write-batch"] },
     ],
   },
 };
