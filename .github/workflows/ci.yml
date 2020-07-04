@@ -5,9 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: |
-      github.event_name == 'push' ||
-      !startsWith(github.event.pull_request.head.label, 'rippledb:')
+    if: github.ref == 'refs/heads/master'
 
     strategy:
       matrix:
@@ -36,11 +34,13 @@ jobs:
         env:
           CI: true
 
-      - name: Deploy
-        if: |
-          github.ref == 'refs/heads/master'
+      - name: Login
         run: |
+          echo 'https://heineiuo:${{secrets.RIPPLEDB_BOT_GITHUB_TOKEN}}@github.com' > ~/.git-credentials
           git config --global user.email "heineiuo@gmail.com"
           git config --global user.name "heineiuo"
-          git config --global user.password ${{ secrets.RIPPLEDB_BOT_GITHUB_TOKEN }}
+          git config --global credential.helper store
+
+      - name: Deploy
+        run: |
           GIT_USER=heineiuo yarn deploy
