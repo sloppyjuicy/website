@@ -42,6 +42,5 @@ jobs:
         run: |
           git config --global user.email "heineiuo@gmail.com"
           git config --global user.name "heineiuo"
-          echo 'https://heineiuo:${{ secrets.RIPPLEDB_BOT_GITHUB_TOKEN }}@github.com' >> ~/.git-credentials
-          cat ~/.git-credentials
+          git config --global user.password ${{ secrets.RIPPLEDB_BOT_GITHUB_TOKEN }}
           GIT_USER=heineiuo yarn deploy
