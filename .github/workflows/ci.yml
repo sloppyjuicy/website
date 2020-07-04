@@ -25,4 +25,4 @@ jobs:
         if: |
           github.ref == 'refs/heads/master'
         run: |
-          npm run deploy
+          GIT_USER=heineiuo npm run deploy
