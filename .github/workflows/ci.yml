@@ -42,4 +42,5 @@ jobs:
         run: |
           git config --global user.email "heineiuo@gmail.com"
           git config --global user.name "heineiuo"
+          echo 'https://heineiuo:${{ secrets.GITHUB_TOKEN }}@github.com' >> ~/.git-credentials
           GIT_USER=heineiuo yarn deploy
