@@ -27,7 +27,7 @@ jobs:
         with:
           path: |
             **/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
           
       - name: Install Dependencies
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
@@ -40,6 +40,6 @@ jobs:
         if: |
           github.ref == 'refs/heads/master'
         run: |
-          git config user.email "heineiuo@gmail.com"
-          git config user.name "heineiuo"
+          git config --global user.email "heineiuo@gmail.com"
+          git config --global user.name "heineiuo"
           GIT_USER=heineiuo yarn deploy
