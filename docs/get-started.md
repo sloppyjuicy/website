@@ -30,7 +30,7 @@ async function main(){
   const db = new Database(path.resolve(__dirname, './db'))
   await db.put('foo', 'bar')
   console.log(
-    new TextDecorder().decode(await db.get('foo'))
+    new TextDecoder().decode(await db.get('foo'))
   ) // 'bar'
 }
 
